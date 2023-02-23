@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+// IMPORTS
+@import "./config";
+@import "./base";
+@import "./layout";
+
+/*!----- COMPONENTS -------*/
+
+/*!----- PAGES -------*/
+.home {
+	header {
+		padding-bottom: 60px;
+	}
+
+	.qr_card {
+		padding: 32px 12px;
+		display: grid;
+		justify-items: center;
+		position: relative;
+		top: -40px;
+	}
+
+	.qr_card img {
+		padding-bottom: 24px;
+	}
+}
+
+/*!----- MEDIA QUERIES -------*/
+@include media_screen_sm {
+}
+@include media_screen_lg {
+}

@@ -1,0 +1,37 @@
+// Layout
+
+header {
+	background: rgba(186, 102, 187, 0.75);
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.action_menu {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 12px 20px;
+	background: #fff;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 12x 12x 0px 0px;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		a {
+			line-height: 0;
+		}
+	}
+}

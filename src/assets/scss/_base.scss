@@ -1,0 +1,14 @@
+// Base
+img {
+	max-width: 100%;
+}
+
+/* Helper Classes */
+._flex {
+	display: flex;
+	align-items: center;
+}
+._grid {
+	display: grid;
+	align-content: center;
+}
