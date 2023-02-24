@@ -11,6 +11,12 @@ $secondaryHover: rgba(151, 71, 255, 0.75);
 	place-content: center;
 }
 
+@mixin flex_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 // MEDIA QUERIES
 @mixin media_screen_sm {
 	@media (max-width: 576px) {

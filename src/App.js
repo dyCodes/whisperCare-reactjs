@@ -4,6 +4,14 @@ import Home from "./pages/Home";
 
 function App() {
 	const theme = createTheme({
+		palette: {
+			primary: {
+				main: "#9747ff",
+			},
+			secondary: {
+				main: "#c46fc6",
+			},
+		},
 		typography: {
 			fontFamily: "Poppins, sans-serif",
 		},
