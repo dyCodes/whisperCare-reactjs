@@ -25,13 +25,13 @@ const Layout = ({ page, children }) => {
 			<div className="action_menu">
 				<Container maxWidth="sm" className="container">
 					<Link href="/" underline="none">
-						<HomeIcon sx={{ color: "#888", fontSize: 42 }} />
+						<HomeIcon sx={{ color: "#888", fontSize: "40px" }} />
 					</Link>
 					<Link href="/" underline="none">
-						<PlayCircleIcon sx={{ color: "#9747FF", fontSize: 52 }} />
+						<PlayCircleIcon sx={{ color: "#9747FF", fontSize: "50px" }} />
 					</Link>
 					<Link href="/" underline="none">
-						<SettingsIcon sx={{ color: "#888", fontSize: 42 }} />
+						<SettingsIcon sx={{ color: "#888", fontSize: "40px" }} />
 					</Link>
 				</Container>
 			</div>
