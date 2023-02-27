@@ -4,10 +4,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
 import Review from "./pages/Review";
+import Settings from "./pages/Settings";
 
 function App() {
 	const theme = createTheme({
 		palette: {
+			mode: "light",
 			primary: {
 				main: "#9747ff",
 			},
@@ -41,6 +43,10 @@ function App() {
 		{
 			path: "review",
 			element: <Review />,
+		},
+		{
+			path: "settings",
+			element: <Settings />,
 		},
 	]);
 

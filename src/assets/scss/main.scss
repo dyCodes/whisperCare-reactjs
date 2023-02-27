@@ -9,7 +9,9 @@
 .Home header,
 .Review header {
 	padding-bottom: 65px;
+	margin: 0;
 }
+
 .header_card {
 	position: relative;
 	top: -45px;
@@ -18,6 +20,16 @@
 	.card {
 		width: 100%;
 		// max-width: 420px;
+	}
+}
+
+form {
+	.form_actions {
+		@include flex_space_between;
+
+		& > * {
+			width: 48%;
+		}
 	}
 }
 
@@ -97,17 +109,14 @@
 			font-size: 14px;
 			color: #717171;
 		}
-
-		.form_actions {
-			@include flex_space_between;
-
-			& > * {
-				width: 48%;
-			}
-		}
 	}
 }
 
+.Settings {
+	.settingsItem {
+		margin: 12px 0;
+	}
+}
 //
 
 /*!----- MEDIA QUERIES -------*/
