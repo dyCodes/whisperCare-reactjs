@@ -6,8 +6,8 @@
 @import "./layout";
 
 /*!----- COMPONENTS -------*/
-.Home header,
-.Review header {
+#Home header,
+#Review header {
 	padding-bottom: 65px;
 	margin: 0;
 }
@@ -34,7 +34,7 @@ form {
 }
 
 /*!----- PAGES -------*/
-.Home {
+#Home {
 	.scan_qrcode {
 		padding: 0;
 		width: 100%;
@@ -76,7 +76,6 @@ form {
 	.recent_scans {
 		.recent_scans_item {
 			padding: 10px 12px;
-
 			background: #f5f5f5;
 			border-radius: 12px;
 
@@ -95,9 +94,20 @@ form {
 			}
 		}
 	}
+
+	&.dark {
+		.start_review_card {
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.86) 100%),
+				url("./assets/img/review_bg.svg") no-repeat center;
+			background-size: cover;
+		}
+		.recent_scans_item {
+			background: #222 !important;
+		}
+	}
 }
 
-.Review {
+#Review {
 	.card {
 		padding: 30px 14px;
 
@@ -112,7 +122,7 @@ form {
 	}
 }
 
-.Settings {
+#Settings {
 	.settingsItem {
 		margin: 12px 0;
 	}
