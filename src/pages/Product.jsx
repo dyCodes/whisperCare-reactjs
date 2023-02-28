@@ -11,7 +11,7 @@ const Product = () => {
 	useEffect(() => {
 		const product = products.find((product) => product.code === id);
 		setProduct(product);
-	}, []);
+	}, [id]);
 
 	return (
 		<Layout page="Product">
