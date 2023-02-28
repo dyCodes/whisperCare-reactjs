@@ -24,6 +24,8 @@ const ScanQRcode = ({ setOpenModal, openModal }) => {
 	};
 
 	const stopScanning = (closeModal) => {
+		closeModal && setOpenModal(false);
+
 		if (scanner) {
 			scanner
 				.stop()
@@ -32,7 +34,6 @@ const ScanQRcode = ({ setOpenModal, openModal }) => {
 				})
 				.catch((err) => handleError(err));
 		}
-		return closeModal && setOpenModal(false);
 	};
 
 	useEffect(() => {
@@ -106,11 +107,11 @@ const ResultDisplay = ({ data }) => {
 	} else {
 		return (
 			<div className="result">
-				<Typography align="center" variant="h6" mt={2.5} sx={{ fontWeight: "bold" }}>
+				<Typography align="center" variant="h6" mt={2.5} sx={{ fontWeight: "bold", lineBreak: "anywhere" }}>
 					Code: {data.decodedText}
 				</Typography>
 
-				<Typography align="center" variant="h6" my={1} color={"error"}>
+				<Typography align="center" variant="h6" mt={1.5} mx={1.4} color={"error"}>
 					No product found with this code
 				</Typography>
 			</div>

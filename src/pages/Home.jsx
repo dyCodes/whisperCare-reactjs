@@ -4,7 +4,7 @@ import { Button, Card, Container, Link, Typography } from "@mui/material";
 import Layout from "../components/Layout";
 import RecentQRScans from "../components/RecentQRScans";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import QRcode from "../assets/img/qrcode.svg";
+import QrCode2Icon from "@mui/icons-material/QrCode2";
 import ScanQRcode from "../components/ScanQRcode";
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
 				<div className="header_card">
 					<Button className="scan_qrcode" onClick={() => setOpenModal(true)}>
 						<Card className="card">
-							<img src={QRcode} style={{ display: "block" }} alt="Scan QRcode" />
+							<QrCode2Icon className="scan_icon" sx={{ fontSize: "92px" }} />
 							<Typography component="p" align="center" sx={{ fontWeight: 500 }}>
 								Scan QR code to get more information
 							</Typography>
