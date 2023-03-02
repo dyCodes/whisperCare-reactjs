@@ -1,26 +1,40 @@
 [
 	{
 		"id": 1,
-		"code": "12345",
-		"name": "Product 1",
-		"price": 100,
-		"image": "http://www.example.com/image1.jpg",
-		"details": "This is the details of product 1"
+		"code": "1111222201",
+		"name": "Crystal Glide Lipstick",
+		"brand": "MARY KAY",
+		"color": "Garnet (Burgundy)",
+		"size": "12ml",
+		"price": "$29.00",
+		"rating": 4.5,
+		"review_count": "1,000+",
+		"img": "https://cdn.shopify.com/s/files/1/0009/6623/0076/products/LipStick_PopTheQuest_Swatch_web_650x.jpg",
+		"details": "Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! Infused with pure color pigments and crystal chrome pearls, this innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
+		"description": [
+			"Infused with pure color pigments & crystal chrome pearls for intense color",
+			"Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! Infused with pure color pigments and crystal chrome pearls, this innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
+			"Can be used as an eyeliner to create sultry looks",
+			"Long-wear, crease-proof, and smudge-proof"
+		]
 	},
 	{
 		"id": 2,
-		"code": "12346",
-		"name": "Product 2",
-		"price": 200,
-		"image": "http://www.example.com/image2.jpg",
-		"details": "This is the details of product 2"
-	},
-	{
-		"id": 3,
-		"code": "12347",
-		"name": "Product 3",
-		"price": 300,
-		"image": "http://www.example.com/image3.jpg",
-		"details": "This is the details of product 3"
+		"code": "1111222202",
+		"name": "Bronze Liquid Eyeshadow",
+		"brand": "ESTEE LAUDER",
+		"color": "Deep Bronze",
+		"size": "12ml",
+		"price": "$19.00",
+		"rating": 4.8,
+		"review_count": "8,540+",
+		"img": "https://cdn.shopify.com/s/files/1/0009/6623/0076/products/CrystalGlide_SmokyTopaz_Front_wSwatch_web_1024x1024.jpg",
+		"details": "A head-turning, long-wear liquid eyeshadow that delivers vibrant, high-shimmer color in a comfortable, crease-proof formula.",
+		"description": [
+			"Infused with pure color pigments & crystal chrome pearls for intense color",
+			"Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! Infused with pure color pigments and crystal chrome pearls, this innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
+			"Can be used as an eyeliner to create sultry looks",
+			"Long-wear, crease-proof, and smudge-proof"
+		]
 	}
 ]

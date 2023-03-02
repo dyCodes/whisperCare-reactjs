@@ -13,9 +13,10 @@ const Review = () => {
 			<Container maxWidth="sm" className="container">
 				<FormVerifyOTP setLoading={setLoading} setProductData={setProductData} />
 
-				<Divider variant="middle" />
+				<Divider sx={{ mb: "18px" }} />
+
 				{loading && <Loader />}
-				{productData && !loading && <ReviewProduct productData={productData} />}
+				{productData && !loading && <ReviewProduct product={productData} />}
 			</Container>
 		</Layout>
 	);

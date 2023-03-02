@@ -33,6 +33,59 @@ form {
 	}
 }
 
+.product_details {
+	margin: 12px 0;
+
+	p {
+		margin: 0 0 12px;
+	}
+
+	.rating {
+		width: 100%;
+		padding: 12px 14px;
+		margin-top: 20px;
+		margin-bottom: 12px;
+		background: #eee;
+
+		p {
+			margin-bottom: 6px;
+		}
+
+		.review_count {
+			opacity: 0.75;
+			font-size: 15px;
+			margin-left: 6px;
+		}
+
+		span.score {
+			margin-left: 8px;
+			font-weight: 500;
+		}
+	}
+}
+
+.recent_scans {
+	.recent_scans_item {
+		padding: 10px 12px;
+		background: #f5f5f5;
+		border-radius: 12px;
+
+		img {
+			width: 62px;
+			margin-right: 18px;
+		}
+		.brand {
+			margin: 0;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+		p {
+			margin: 0;
+			margin-bottom: 5px;
+		}
+	}
+}
+
 /*!----- PAGES -------*/
 #Home {
 	.scan_qrcode {
@@ -55,7 +108,7 @@ form {
 		background: linear-gradient(180deg, rgba(255, 255, 255, 0.61) 0%, rgba(255, 255, 255, 0.61) 100%),
 			url("./assets/img/review_bg.svg") no-repeat center;
 		background-size: cover;
-		margin-bottom: 32px;
+		margin-bottom: 36px;
 
 		.heading {
 			margin: 0;
@@ -73,36 +126,11 @@ form {
 		}
 	}
 
-	.recent_scans {
-		.recent_scans_item {
-			padding: 10px 12px;
-			background: #f5f5f5;
-			border-radius: 12px;
-
-			img {
-				width: 62px;
-				margin-right: 18px;
-			}
-			.brand {
-				margin: 0;
-				font-size: 1rem;
-				font-weight: 600;
-			}
-			p {
-				margin: 0;
-				margin-bottom: 5px;
-			}
-		}
-	}
-
 	&.dark {
 		.start_review_card {
 			background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.86) 100%),
 				url("./assets/img/review_bg.svg") no-repeat center;
 			background-size: cover;
-		}
-		.recent_scans_item {
-			background: #222 !important;
 		}
 	}
 }
@@ -122,12 +150,29 @@ form {
 	}
 }
 
+#Product {
+	.product_reviews {
+		padding: 12px 0;
+	}
+}
+
 #Settings {
 	.settingsItem {
 		margin: 12px 0;
 	}
 }
 //
+
+/*!----- Dark Mode -------*/
+.dark {
+	.product_details .rating {
+		background: #222;
+	}
+
+	.recent_scans_item {
+		background: #222 !important;
+	}
+}
 
 /*!----- MEDIA QUERIES -------*/
 @include media_screen_sm {

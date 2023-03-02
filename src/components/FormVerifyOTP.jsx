@@ -1,6 +1,7 @@
+import React, { useState } from "react";
 import { Button, Card, CardActions, Link, Typography } from "@mui/material";
 import { MuiOtpInput } from "mui-one-time-password-input";
-import React, { useState } from "react";
+import products from "../assets/products-demo.json";
 
 const FormVerifyOTP = ({ setLoading, setProductData }) => {
 	const [OTPcode, setOTPcode] = useState("");
@@ -24,11 +25,7 @@ const FormVerifyOTP = ({ setLoading, setProductData }) => {
 			// API call to verify OTP code - for demo purposes, we'll just set a timeout
 			setTimeout(() => {
 				setLoading(false);
-				setProductData({
-					name: "Mary Kay® CC Cream Sunscreen Broad Spectrum SPF 15*",
-					size: "Medium to Deep",
-					photo: "demo.jpg",
-				});
+				setProductData(products[0]);
 			}, 2000);
 		} else {
 			alert("Please enter the OTP code");
