@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Button, Card, Container, Link, Typography } from "@mui/material";
 import Layout from "../components/Layout";
@@ -6,8 +6,10 @@ import RecentQRScans from "../components/RecentQRScans";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import QrCode2Icon from "@mui/icons-material/QrCode2";
 import ScanQRcode from "../components/ScanQRcode";
+import { AppContext } from "../context/AppContext";
 
 const Home = () => {
+	const { recentScans } = useContext(AppContext);
 	const [openModal, setOpenModal] = useState(false);
 
 	return (
@@ -37,11 +39,16 @@ const Home = () => {
 					</Link>
 				</Card>
 
-				<Typography variant="h6" component="h2" mb={2.5} sx={{ fontWeight: "bold" }}>
-					Recent QR code scans
-				</Typography>
+				<div className="_flex_space_btw _mb2">
+					<Typography variant="h6" component="h2" sx={{ fontWeight: "bold" }}>
+						Recent QR code scans
+					</Typography>
+					<Link component={RouterLink} to={"/scan-history"} underline="hover" fontWeight="bold">
+						View All
+					</Link>
+				</div>
 
-				<RecentQRScans />
+				<RecentQRScans recentScans={recentScans.slice(0, 4)} />
 			</Container>
 		</Layout>
 	);
