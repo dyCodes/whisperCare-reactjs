@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 import products from "../assets/products-demo.json";
 import ProductDetails from "../components/ProductDetails";
+import ProductReviews from "../components/ProductReviews";
 
 const Product = () => {
 	const { id } = useParams();
@@ -23,11 +24,13 @@ const Product = () => {
 						<Divider />
 						<ProductInfo product={product} />
 
-						<Divider />
+						<Divider sx={{ my: "24px" }} />
 						<ProductReviews product={product} />
 					</div>
 				) : (
-					<h3>No product found..</h3>
+					<Typography variant="h4" component="h1" mt={6} align="center" sx={{ fontWeight: "bold" }}>
+						Product not found
+					</Typography>
 				)}
 			</Container>
 		</Layout>
@@ -36,28 +39,30 @@ const Product = () => {
 
 const ProductInfo = ({ product }) => {
 	return (
-		<div className="product_info">
-			<div className="rateProduct">
-				<h3>Description</h3>
+		<>
+			<div className="product_info">
+				<Typography variant="h6" component="h2" my={2} sx={{ fontWeight: "bold" }}>
+					Description
+				</Typography>
+				<p>{product.details}</p>
+
+				<ul>
+					{product.description.map((desc, index) => (
+						<li key={index}>{desc}</li>
+					))}
+				</ul>
 			</div>
-			<p>{product.details}</p>
 
-			<ul>
-				{product.description.map((desc, index) => (
-					<li key={index}>{desc}</li>
-				))}
-			</ul>
-		</div>
-	);
-};
+			<Divider sx={{ my: "24px" }} />
 
-const ProductReviews = ({ product }) => {
-	return (
-		<div className="product_reviews">
-			<Typography variant="h6" component="h2" mb={2.5} sx={{ fontWeight: "bold" }}>
-				Reviews and ratings
-			</Typography>
-		</div>
+			<div className="product_info">
+				<Typography variant="h6" component="h2" my={2} sx={{ fontWeight: "bold" }}>
+					Ingredients
+				</Typography>
+
+				<p>{product.ingredients}</p>
+			</div>
+		</>
 	);
 };
 

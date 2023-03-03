@@ -20,31 +20,31 @@ export const AppProvider = ({ children }) => {
 		},
 		{
 			id: 3,
-			code: "1111222201",
+			code: "1111222203",
 			brand: "MARY KAY",
 			name: "Sunscreen broad SPF 15",
 			img: process.env.PUBLIC_URL + "/assets/mary_kay.png",
 		},
 		{
 			id: 4,
+			code: "1111222204",
 			brand: "ESTEE LAUDER",
 			name: "Sunscreen broad SPF 15",
 			img: process.env.PUBLIC_URL + "/assets/estee_lauder.png",
-			code: "1111222235",
 		},
 		{
 			id: 5,
+			code: "1111222205",
 			brand: "ESTEE LAUDER",
 			name: "Sunscreen broad SPF 15",
 			img: process.env.PUBLIC_URL + "/assets/estee_lauder.png",
-			code: "1111222236",
 		},
 		{
 			id: 6,
+			code: "1111222206",
 			brand: "MARY KAY",
 			name: "Sunscreen broad SPF 15",
 			img: process.env.PUBLIC_URL + "/assets/mary_kay.png",
-			code: "1111222237",
 		},
 	]);
 
