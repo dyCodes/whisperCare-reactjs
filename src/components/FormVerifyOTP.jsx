@@ -6,12 +6,6 @@ import products from "../assets/products-demo.json";
 const FormVerifyOTP = ({ setLoading, setProductData }) => {
 	const [OTPcode, setOTPcode] = useState("");
 
-	// const validateChar = (text, index) => {
-	// 	const isNumber = typeof text === "number";
-	// 	const isString = typeof text === "string";
-	// 	return (isNumber || (isString && text !== "")) && !isNaN(Number(text));
-	// };
-
 	const handleCancel = () => {
 		setOTPcode("");
 	};
@@ -26,7 +20,7 @@ const FormVerifyOTP = ({ setLoading, setProductData }) => {
 			setTimeout(() => {
 				setLoading(false);
 				setProductData(products[0]);
-			}, 2000);
+			}, 1000);
 		} else {
 			alert("Please enter the OTP code");
 		}
@@ -45,8 +39,8 @@ const FormVerifyOTP = ({ setLoading, setProductData }) => {
 						length={5}
 						value={OTPcode}
 						onChange={(e) => setOTPcode(e)}
-						// validateChar={validateChar} type: "number"
-						TextFieldsProps={{ size: "large", placeholder: "-" }}
+						// type: "number"
+						TextFieldsProps={{ type: "number", size: "large", placeholder: "-" }}
 					/>
 
 					<Typography component="p" align="center" className="mute_text">
