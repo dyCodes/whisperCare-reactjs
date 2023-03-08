@@ -1,19 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Container, Divider, Typography } from "@mui/material";
 import { useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 import products from "../assets/products-demo.json";
 import ProductDetails from "../components/ProductDetails";
 import ProductReviews from "../components/ProductReviews";
+import { AppContext } from "../context/AppContext";
 
 const Product = () => {
 	const { id } = useParams();
 	const [product, setProduct] = useState(null);
+	const { speak } = useContext(AppContext);
 
 	useEffect(() => {
 		const product = products.find((product) => product.code === id);
+		const productTTS = `Product: ${product.name}. Brand: ${product.brand}. Color: ${product.color}. Price: ${product.price}. Rating: ${product.rating} over 5.`;
+		speak(productTTS);
+
 		setProduct(product);
-	}, [id]);
+	}, [speak, id]);
 
 	return (
 		<Layout page="Product">

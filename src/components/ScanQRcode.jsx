@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Html5Qrcode } from "html5-qrcode";
 import { Box, Button, CircularProgress, Dialog, Typography } from "@mui/material";
 import products from "../assets/products-demo.json";
+import { AppContext } from "../context/AppContext";
 
 const qrcodeRegionId = "html5qr-code-full-region";
 
 const ScanQRcode = ({ setOpenModal, openModal }) => {
+	const { speak } = useContext(AppContext);
 	const [scanner, setScanner] = useState(null);
 	const [data, setData] = useState({ error: false, loading: true });
 
@@ -24,6 +26,7 @@ const ScanQRcode = ({ setOpenModal, openModal }) => {
 	};
 
 	const stopScanning = (closeModal) => {
+		speak("Scanning cancelled");
 		closeModal && setOpenModal(false);
 
 		if (scanner) {
@@ -43,13 +46,15 @@ const ScanQRcode = ({ setOpenModal, openModal }) => {
 				if (devices && devices.length) {
 					// let cameraId = devices[0].id;
 					setScanner(new Html5Qrcode(qrcodeRegionId));
+					speak("Scanning... Button: Cancel Scan");
 				}
 			})
 			.catch((err) => {
 				handleError(err);
 				setData({ error: err, loading: false });
+				speak("Scanning failed. Permission required.");
 			});
-	}, []);
+	}, [speak]);
 
 	return (
 		<Dialog fullWidth onClose={handleModalClose} open={openModal}>

@@ -5,11 +5,13 @@ import RecentQRScans from "../components/RecentQRScans";
 import { AppContext } from "../context/AppContext";
 
 const ScanHistory = () => {
+	const { speak } = useContext(AppContext);
 	const { recentScans } = useContext(AppContext);
 
 	useEffect(() => {
+		speak("ScanHistory", true);
 		window.scrollTo(0, 0);
-	}, []);
+	}, [speak]);
 
 	return (
 		<Layout page="ScanHistory">
