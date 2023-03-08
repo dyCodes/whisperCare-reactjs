@@ -35,7 +35,8 @@
 				"id": 3,
 				"name": "John Smith",
 				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"content": "",
+				"audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 			},
 			{
 				"id": 4,
@@ -81,7 +82,8 @@
 				"id": 2,
 				"name": "Jane Doe",
 				"rating": 4.5,
-				"content": "I have been using it for a few months now and I am very happy with it. I would definitely recommend this product to anyone who is looking for a great liquid lipstick."
+				"content": "",
+				"audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 			},
 			{
 				"id": 3,

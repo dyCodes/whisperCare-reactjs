@@ -22,7 +22,7 @@ const ProductDetails = ({ product }) => {
 				</p>
 
 				<p className="_mb0">
-					<b>Size: </b> {product.size}
+					<b>Price: </b> {product.price}
 				</p>
 			</Grid>
 
@@ -34,7 +34,7 @@ const ProductDetails = ({ product }) => {
 
 					<div className="_flex">
 						<Rating name="half-rating-read" value={product.rating} precision={0.5} readOnly />
-						<span className="score">{product.rating} out 5</span>
+						<span className="score">{product.rating} over 5</span>
 					</div>
 				</Paper>
 			</Grid>
