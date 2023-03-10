@@ -94,6 +94,12 @@ form {
 	}
 }
 
+.confirm_store_modal {
+	button {
+		padding: 10px 16px;
+	}
+}
+
 /*!----- PAGES -------*/
 #Home {
 	.scan_qrcode {
@@ -202,6 +208,15 @@ form {
 				background-color: $primaryHover;
 				border-radius: 50%;
 			}
+		}
+	}
+}
+
+#LocateProduct {
+	.store_map {
+		.card img {
+			width: 100%;
+			max-width: 120px;
 		}
 	}
 }
