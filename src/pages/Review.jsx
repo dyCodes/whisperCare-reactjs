@@ -17,9 +17,12 @@ const Review = () => {
 	return (
 		<Layout page="Review">
 			<Container maxWidth="sm" className="container">
-				<div {...HandleSpeakEvents("Form: Verify product purchase code")}>
-					<FormVerifyOTP setLoading={setLoading} setProductData={setProductData} />
-				</div>
+				<FormVerifyOTP
+					setLoading={setLoading}
+					setProductData={setProductData}
+					speak={speak}
+					HandleSpeakEvents={HandleSpeakEvents}
+				/>
 
 				<Divider sx={{ mb: "18px" }} />
 

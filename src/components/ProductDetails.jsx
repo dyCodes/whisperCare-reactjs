@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Grid, Paper, Rating, Typography } from "@mui/material";
+import { AppContext } from "../context/AppContext";
 
 const ProductDetails = ({ product }) => {
+	const { speak, HandleSpeakEvents } = useContext(AppContext);
+	const productTTS = `Product Details: ${product.name}. Brand: ${product.brand}. Color: ${product.color}. Price: ${product.price}. Rating: ${product.rating} over 5.`;
+
+	useEffect(() => {
+		speak(productTTS);
+	}, [speak, product, productTTS]);
+
 	return (
-		<Grid container spacing={2} className="product_details">
+		<Grid container spacing={2} className="product_details" {...HandleSpeakEvents(productTTS)}>
 			<Grid item xs={4} className="image_div">
 				<img src={product.img} alt={product.name} />
 			</Grid>
