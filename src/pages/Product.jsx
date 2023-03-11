@@ -10,7 +10,7 @@ import { AppContext } from "../context/AppContext";
 const Product = () => {
 	const { id } = useParams();
 	const [product, setProduct] = useState(null);
-	const { speak, HandleSpeakEvents } = useContext(AppContext);
+	const { speak } = useContext(AppContext);
 
 	useEffect(() => {
 		const product = products.find((product) => product.code === id);
@@ -27,10 +27,10 @@ const Product = () => {
 					<div className="product">
 						<ProductDetails product={product} />
 						<Divider />
-						<ProductInfo product={product} HandleSpeakEvents={HandleSpeakEvents} />
+						<ProductInfo product={product} speak={speak} />
 
 						<Divider sx={{ my: "24px" }} />
-						<ProductReviews product={product} HandleSpeakEvents={HandleSpeakEvents} />
+						<ProductReviews product={product} speak={speak} />
 					</div>
 				) : (
 					<Typography variant="h4" component="h1" mt={6} align="center" sx={{ fontWeight: "bold" }}>
@@ -42,12 +42,12 @@ const Product = () => {
 	);
 };
 
-const ProductInfo = ({ product, HandleSpeakEvents }) => {
+const ProductInfo = ({ product, speak }) => {
 	const descText = "Description: " + product.details + " " + product.description.join(", ");
 
 	return (
 		<>
-			<div className="product_info" {...HandleSpeakEvents(descText)}>
+			<div className="product_info" onClick={() => speak(descText)}>
 				<Typography variant="h6" component="h2" my={2} sx={{ fontWeight: "bold" }}>
 					Description
 				</Typography>
@@ -62,7 +62,7 @@ const ProductInfo = ({ product, HandleSpeakEvents }) => {
 
 			<Divider sx={{ my: "24px" }} />
 
-			<div className="product_info" {...HandleSpeakEvents("Ingredients: " + product.ingredients)}>
+			<div className="product_info" onClick={() => speak("Ingredients: " + product.ingredients)}>
 				<Typography variant="h6" component="h2" my={2} sx={{ fontWeight: "bold" }}>
 					Ingredients
 				</Typography>

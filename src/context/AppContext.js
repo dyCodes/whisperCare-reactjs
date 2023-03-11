@@ -40,15 +40,6 @@ export const AppProvider = ({ children }) => {
 			speakText.pitch = 1;
 			speakText.volume = 1;
 
-			// speakText.onstart = (e) => {
-			// 	console.log("Text: ", text);
-			// 	console.log("Speaking...");
-			// };
-
-			speakText.onend = (e) => {
-				console.log("Done speaking...");
-			};
-
 			speakText.onerror = (e) => {
 				console.log("Error speaking...");
 			};

@@ -215,8 +215,9 @@ form {
 			}
 
 			.audio_div {
-				height: 60px;
-				border-radius: 12px;
+				height: 58px;
+				border-radius: 18px;
+				padding: 0 6px;
 				border: 1px solid #888;
 				@include flex_center;
 			}

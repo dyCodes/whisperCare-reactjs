@@ -56,13 +56,21 @@ const LocateProduct = () => {
 						<video
 							autoPlay={true}
 							loop={true}
-							style={{ width: "100%", display: "block", margin: "0 auto", maxWidth: "340px" }}
+							playsInline={true}
+							muted={true}
+							style={{
+								width: "100%",
+								display: "block",
+								margin: "0 auto",
+								maxWidth: "340px",
+								borderRadius: "28px",
+							}}
 							src={VoiceAnimation}
 							alt="Voice Animation"
 						/>
 					</div>
 
-					<Typography variant="h6" mt={-5} align="center" sx={{ fontWeight: "bold" }}>
+					<Typography variant="h6" mt={1.6} align="center" sx={{ fontWeight: "bold" }}>
 						Listening, please say the product name
 					</Typography>
 				</Container>
@@ -82,11 +90,11 @@ const LocateProduct = () => {
 };
 
 const ConfirmModal = ({ openModal, storeName, handleCancel, handleProceed, speak }) => {
+	const ttsContent = `Modal: We have detected that you are currently in ${storeName}, please confirm. Button: No, Go Back, Button: Yes, Proceed`;
+
 	useEffect(() => {
-		speak(
-			`Modal: We have detected that you are currently in ${storeName}, please confirm. Button: No, Go Back, Button: Yes, Proceed`
-		);
-	}, [storeName, speak]);
+		speak(ttsContent);
+	}, [ttsContent, speak]);
 
 	return (
 		<Dialog
@@ -96,7 +104,10 @@ const ConfirmModal = ({ openModal, storeName, handleCancel, handleProceed, speak
 			aria-labelledby="alert-dialog-title"
 			aria-describedby="alert-dialog-description"
 			className="confirm_store_modal">
-			<DialogTitle id="alert-dialog-title" sx={{ textAlign: "center", fontSize: "1.12rem" }}>
+			<DialogTitle
+				id="alert-dialog-title"
+				onClick={() => speak(ttsContent)}
+				sx={{ textAlign: "center", fontSize: "1.12rem" }}>
 				We have detected that you are currently in <b>{storeName}</b>, please confirm
 			</DialogTitle>
 
