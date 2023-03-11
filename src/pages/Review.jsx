@@ -12,6 +12,12 @@ const Review = () => {
 
 	useEffect(() => {
 		speak("Review", true);
+
+		// IOS Fix: Add inputMode="numeric" to all OTP fields
+		const inputFields = Array.from(document.querySelectorAll(".OTPfield input"));
+		inputFields.forEach((input) => {
+			input.setAttribute("inputMode", "numeric");
+		});
 	}, [speak]);
 
 	return (

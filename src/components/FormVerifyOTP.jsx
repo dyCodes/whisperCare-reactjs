@@ -45,7 +45,7 @@ const FormVerifyOTP = ({ setLoading, setProductData, speak, HandleSpeakEvents })
 						value={OTPcode}
 						onChange={(e) => setOTPcode(e)}
 						{...HandleSpeakEvents("Input: Verification code")}
-						TextFieldsProps={{ type: "number", inputMode: "numeric", size: "large", placeholder: "-" }}
+						TextFieldsProps={{ type: "number", size: "large", placeholder: "-" }}
 					/>
 
 					<Typography component="p" align="center" className="mute_text">
