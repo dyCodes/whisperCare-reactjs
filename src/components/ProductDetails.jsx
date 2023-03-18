@@ -1,10 +1,11 @@
 import React, { useContext, useEffect } from "react";
 import { Grid, Paper, Rating, Typography } from "@mui/material";
+import VerifiedIcon from "@mui/icons-material/Verified";
 import { AppContext } from "../context/AppContext";
 
 const ProductDetails = ({ product }) => {
 	const { speak, HandleSpeakEvents } = useContext(AppContext);
-	const productTTS = `Product Details: ${product.name}. Brand: ${product.brand}. Color: ${product.color}. Price: ${product.price}. Rating: ${product.rating} over 5.`;
+	const productTTS = `Product Details: ${product.name}. Brand: ${product.brand}. Color: ${product.color}. Price: ${product.price}. Verified Product. Rating: ${product.rating} over 5.`;
 
 	useEffect(() => {
 		speak(productTTS);
@@ -29,8 +30,12 @@ const ProductDetails = ({ product }) => {
 					<b>Color: </b> {product.color}
 				</p>
 
-				<p className="_mb0">
+				<p className="">
 					<b>Price: </b> {product.price}
+				</p>
+
+				<p className="badge _mb0 _flex">
+					<VerifiedIcon color="success" sx={{ mr: "6px" }} /> <span>Verified Product</span>
 				</p>
 			</Grid>
 

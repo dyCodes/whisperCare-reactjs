@@ -100,6 +100,29 @@ form {
 	}
 }
 
+.feedback_modal {
+	.success_div {
+		@include flex_center;
+		flex-direction: column;
+		padding: 10px 12px 22px;
+	}
+	.content {
+		padding: 0 12px;
+		margin-bottom: 16px;
+	}
+	textarea {
+		resize: none;
+		padding: 12px;
+		width: 100%;
+		border-radius: 3px;
+		border: 1px solid #222;
+	}
+	.form_actions {
+		padding: 0 12px;
+		margin-bottom: 20px;
+	}
+}
+
 /*!----- PAGES -------*/
 #Home {
 	.scan_qrcode {

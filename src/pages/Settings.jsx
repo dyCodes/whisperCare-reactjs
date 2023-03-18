@@ -9,6 +9,7 @@ import {
 	Typography,
 } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
+import FeedbackModal from "../components/FeedbackModal";
 import Layout from "../components/Layout";
 import { AppContext } from "../context/AppContext";
 
@@ -16,6 +17,7 @@ const Settings = () => {
 	const { speak, HandleSpeakEvents } = useContext(AppContext);
 	const [fontSize, setFontSize] = useState(2);
 	const [speechSpeed, setSpeechSpeed] = useState(2);
+	const [openModal, setOpenModal] = useState(false);
 
 	useEffect(() => {
 		speak("Settings", true);
@@ -97,8 +99,23 @@ const Settings = () => {
 					</FormGroup>
 
 					<Divider />
+
+					<div className="setting_link">
+						<Typography
+							variant="h6"
+							component="p"
+							my={2.5}
+							onClick={() => setOpenModal(true)}
+							sx={{ fontWeight: "500" }}>
+							Give Feedback
+						</Typography>
+					</div>
+
+					<Divider />
 				</form>
 			</Container>
+
+			{openModal && <FeedbackModal openModal={openModal} setOpenModal={setOpenModal} speak={speak} />}
 		</Layout>
 	);
 };
@@ -116,4 +133,5 @@ const SettingsItem = ({ title, HandleSpeakEvents, children }) => {
 		</div>
 	);
 };
+
 export default Settings;
