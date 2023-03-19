@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Whisper Care - ELC Accessible Beauty Hackathon 2023
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An all-in-one inclusive mobile application that assist the visually impaired in-store to better access and locate products amongst other intriguing features, for a more convenient shopping experience.
+
 
 ## Available Scripts
 
