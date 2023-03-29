@@ -10,47 +10,54 @@
 		"rating": 4.5,
 		"review_count": "1,000+",
 		"img": "https://cdn.shopify.com/s/files/1/0009/6623/0076/products/LipStick_PopTheQuest_Swatch_web_650x.jpg",
-		"details": "Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! Infused with pure color pigments and crystal chrome pearls, this innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
-		"ingredients": "Octyldodecanol, Synthetic Beeswax, VP/Hexadecene Copolymer, Disteardimonium Hectorite, Iron Oxides (CI 77491), Trimethylsiloxysilicate, Alcohol, Propylene Carbonate, Phenoxyethanol, Caprylyl Glycol, Tocopheryl Acetate, Ethylhexylglycerin, Hexylene Glycol.",
+		"details": "Crystal Glide Lipstick is a long-lasting, super-pigmented lipstick formula contains a moisturizing Aloe Vera-base to help protect the lips from signs of aging. Rich mineral pigments offer amazing color payoff while hydrating lips.",
+		"ingredients": "Ricinus communis (Castor) Seed Oil, Euphorbia Cerifera (Candelilla) Wax, Bis-Diglyceryl Polyacyladipate-2, Caprylic/Capric Triglyceride, CI 77891 (Titanium Dioxide), Tricaprylin, Octyldodecanol, Silica, Cera Alba (Beeswax), Ethylhexyl Hydroxystearate, Mica (CI 77019), CI 19140 (FD&C Yellow 5), Propylene Glycol Dibenzoate, Copernicia Cerifera (Carnauba) Wax, Calcium Aluminium Borosilicate, CI 77163 (Bismuth Oxychloride), CI 77499 (Black Iron Oxide), CI 45410 (D&C Red No 28), Tin Oxide (CI 77861).",
 		"description": [
-			"Infused with pure color pigments & crystal chrome pearls for intense color",
-			"Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! This innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
-			"Can be used as an eyeliner to create sultry looks",
-			"Long-wear, crease-proof, and smudge-proof"
+			"Bodyography’s smooth, creamy classic lipstick is saturated with mineral-based super pigments to keep your color fresh for hours.",
+			"Our classic lipstick has a moisturizing aloe vera base, to keep your lips plump and help fight signs of aging around the delicate skin of your mouth.",
+			"Formulated without parabens & gluten.",
+			"Aloe Vera-based formula hydrates & protects."
 		],
 		"reviews": [
 			{
 				"id": 1,
-				"name": "Olivia",
+				"name": "Olivia M.",
 				"rating": 5,
-				"content": "It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"content": "It is so easy to apply and it lasts all day. I have been using it for a few weeks now and I am very happy with it."
 			},
 			{
 				"id": 2,
-				"name": "Charlotte",
+				"name": "Charlotte S.",
 				"rating": 4.5,
 				"content": "",
-				"audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-04.m4a"
 			},
 			{
 				"id": 3,
 				"name": "Mia Smith",
-				"rating": 4,
+				"rating": 2,
 				"content": "",
-				"audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-00.m4a"
 			},
 			{
 				"id": 4,
-				"name": "Sophia",
-				"rating": 3,
+				"name": "Nicole L.",
+				"rating": 5,
 				"content": "",
-				"audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-05.m4a"
 			},
 			{
 				"id": 5,
-				"name": "Mia Doe",
+				"name": "Mindy W.",
 				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"content": "This color is very versatile for all clothing and love the matte look!"
+			},
+			{
+				"id": 6,
+				"name": "Michelle P.",
+				"rating": 4,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-04.m4a"
 			}
 		]
 	},
@@ -76,28 +83,36 @@
 		"reviews": [
 			{
 				"id": 1,
-				"name": "Mia Doe",
+				"name": "Mia Smith",
 				"rating": 5,
-				"content": "It is so easy to apply and it lasts all day. I have been using it for a few months now."
+				"content": "I love this eyeshadow! The color is amazing on my skin tone and very easy to apply. I don’t think I’ll ever go back to powder eyeshadow!"
 			},
 			{
 				"id": 2,
-				"name": "Charlotte",
-				"rating": 4.5,
+				"name": "Charlotte S.",
+				"rating": 5,
 				"content": "",
-				"audio": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-15.m4a"
 			},
 			{
 				"id": 3,
-				"name": "Mia Smith",
-				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"name": "Michelle P.",
+				"rating": 3,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-13.m4a"
 			},
 			{
 				"id": 4,
-				"name": "Sophia",
-				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"name": "Allison B.",
+				"rating": 1.5,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-00.m4a"
+			},
+			{
+				"id": 5,
+				"name": "Monica L.",
+				"rating": 5,
+				"content": "Beautiful. Perfect for a dewy fresh face look with a hint of glam or dressed up. Getting more colors."
 			}
 		]
 	},
@@ -109,47 +124,57 @@
 		"color": "Garnet (Burgundy)",
 		"size": "12ml",
 		"price": "$29.00",
-		"rating": 4.5,
+		"rating": 3.5,
 		"review_count": "1,000+",
 		"img": "https://cdn.shopify.com/s/files/1/0009/6623/0076/products/LipStick_PopTheQuest_Swatch_web_650x.jpg",
-		"details": "Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! Infused with pure color pigments and crystal chrome pearls, this innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
-		"ingredients": "Octyldodecanol, Synthetic Beeswax, VP/Hexadecene Copolymer, Disteardimonium Hectorite, Iron Oxides (CI 77491), Trimethylsiloxysilicate, Alcohol, Propylene Carbonate, Phenoxyethanol, Caprylyl Glycol, Tocopheryl Acetate, Ethylhexylglycerin, Hexylene Glycol.",
+		"details": "Crystal Glide Lipstick is a long-lasting, super-pigmented lipstick formula contains a moisturizing Aloe Vera-base to help protect the lips from signs of aging. Rich mineral pigments offer amazing color payoff while hydrating lips.",
+		"ingredients": "Ricinus communis (Castor) Seed Oil, Euphorbia Cerifera (Candelilla) Wax, Bis-Diglyceryl Polyacyladipate-2, Caprylic/Capric Triglyceride, CI 77891 (Titanium Dioxide), Tricaprylin, Octyldodecanol, Silica, Cera Alba (Beeswax), Ethylhexyl Hydroxystearate, Mica (CI 77019), CI 19140 (FD&C Yellow 5), Propylene Glycol Dibenzoate, Copernicia Cerifera (Carnauba) Wax, Calcium Aluminium Borosilicate, CI 77163 (Bismuth Oxychloride), CI 77499 (Black Iron Oxide), CI 45410 (D&C Red No 28), Tin Oxide (CI 77861).",
 		"description": [
-			"Infused with pure color pigments & crystal chrome pearls for intense color",
-			"Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! Infused with pure color pigments and crystal chrome pearls, this innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
-			"Can be used as an eyeliner to create sultry looks",
-			"Long-wear, crease-proof, and smudge-proof"
+			"Bodyography’s smooth, creamy classic lipstick is saturated with mineral-based super pigments to keep your color fresh for hours.",
+			"Our classic lipstick has a moisturizing aloe vera base, to keep your lips plump and help fight signs of aging around the delicate skin of your mouth.",
+			"Formulated without parabens & gluten.",
+			"Aloe Vera-based formula hydrates & protects."
 		],
 		"reviews": [
 			{
 				"id": 1,
-				"name": "Mia Doe",
+				"name": "Olivia M.",
 				"rating": 5,
-				"content": "It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"content": "It is so easy to apply and it lasts all day. I have been using it for a few weeks now and I am very happy with it."
 			},
 			{
 				"id": 2,
-				"name": "Charlotte",
+				"name": "Charlotte S.",
 				"rating": 4.5,
-				"content": "I have been using it for a few months now and I am very happy with it. I would definitely recommend this product to anyone who is looking for a great liquid lipstick."
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-04.m4a"
 			},
 			{
 				"id": 3,
 				"name": "Mia Smith",
-				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"rating": 2,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-00.m4a"
 			},
 			{
 				"id": 4,
-				"name": "Sophia",
-				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"name": "Nicole L.",
+				"rating": 5,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-05.m4a"
 			},
 			{
 				"id": 5,
-				"name": "Mia Doe",
+				"name": "Mindy W.",
 				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"content": "This color is very versatile for all clothing and love the matte look!"
+			},
+			{
+				"id": 6,
+				"name": "Michelle P.",
+				"rating": 4,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-04.m4a"
 			}
 		]
 	},
@@ -161,13 +186,13 @@
 		"color": "Deep Bronze",
 		"size": "12ml",
 		"price": "$19.00",
-		"rating": 4.8,
+		"rating": 4.5,
 		"review_count": "8,540+",
 		"img": "https://cdn.shopify.com/s/files/1/0009/6623/0076/products/CrystalGlide_SmokyTopaz_Front_wSwatch_web_1024x1024.jpg",
 		"details": "A head-turning, long-wear liquid eyeshadow that delivers vibrant, high-shimmer color in a comfortable, crease-proof formula.",
 		"description": [
 			"Infused with pure color pigments & crystal chrome pearls for intense color",
-			"Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! Infused with pure color pigments and crystal chrome pearls, this innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
+			"Crystal Glide Liquid Eyeshadow is a weightless, yet intensely-playful, long-lasting liquid eye shadow that will saturate your lids in liquid-chrome-shine for up to 24 hours! This innovative technology delivers vibrant, intense color for a buildable, no-feel finish.",
 			"Can be used as an eyeliner to create sultry looks",
 			"Long-wear, crease-proof, and smudge-proof"
 		],
@@ -175,27 +200,36 @@
 		"reviews": [
 			{
 				"id": 1,
-				"name": "Mia Doe",
+				"name": "Mia Smith",
 				"rating": 5,
-				"content": "It is so easy to apply and it lasts all day. I have been using it for a few months now."
+				"content": "I love this eyeshadow!!The color is amazing on my skin tone and very easy to apply. I don’t think I’ll ever go back to powder eyeshadow!"
 			},
 			{
 				"id": 2,
-				"name": "Charlotte",
-				"rating": 4.5,
-				"content": "I have been using it for a few months now and I am very happy with it. I would definitely recommend this product to anyone who is looking for a great liquid lipstick."
+				"name": "Charlotte S.",
+				"rating": 5,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-15.m4a"
 			},
 			{
 				"id": 3,
-				"name": "Mia Smith",
-				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"name": "Michelle P.",
+				"rating": 3,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-13.m4a"
 			},
 			{
 				"id": 4,
-				"name": "Sophia",
-				"rating": 4,
-				"content": "I love this product. It is so easy to apply and it lasts all day. I have been using it for a few months now and I am very happy with it."
+				"name": "Allison B.",
+				"rating": 1.5,
+				"content": "",
+				"audio": "https://whispercare.netlify.app/reviews/audio-review-demo-00.m4a"
+			},
+			{
+				"id": 5,
+				"name": "Monica L.",
+				"rating": 5,
+				"content": "Beautiful. Perfect for a dewy fresh face look with a hint of glam or dressed up. Getting more colors."
 			}
 		]
 	}
